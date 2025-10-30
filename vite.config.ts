@@ -4,10 +4,11 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
+  base: "./", // ✅ Important for Render (prevents blank/black screen)
   server: {
     host: "::",
     port: 8080,
-    allowedHosts: ["aganitha-earthquake-4.onrender.com"], // ✅ Add this line
+    allowedHosts: ["aganitha-earthquake-4.onrender.com"],
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
