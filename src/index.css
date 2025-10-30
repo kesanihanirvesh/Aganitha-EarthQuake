@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 25% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 20% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 22% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 180 75% 45%;
+    --primary-foreground: 220 25% 8%;
+
+    --secondary: 220 18% 20%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 15% 18%;
+    --muted-foreground: 215 15% 60%;
+
+    --accent: 14 90% 55%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 18%;
+    --ring: 180 75% 45%;
+
+    --radius: 0.75rem;
+
+    /* Seismic severity colors */
+    --quake-critical: 0 85% 60%;
+    --quake-high: 14 90% 55%;
+    --quake-medium: 40 95% 55%;
+    --quake-low: 180 75% 45%;
+    --quake-minimal: 180 60% 65%;
+
+    /* Gradients */
+    --gradient-seismic: linear-gradient(135deg, hsl(0 85% 60%), hsl(14 90% 55%));
+    --gradient-map: linear-gradient(180deg, hsl(220 25% 8% / 0.8), hsl(220 25% 8%));
+    
+    --sidebar-background: 220 22% 10%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 180 75% 45%;
+    --sidebar-primary-foreground: 220 25% 8%;
+    --sidebar-accent: 220 18% 18%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 180 75% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
