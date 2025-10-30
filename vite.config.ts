@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
-    allowedHosts: ["aganitha-earthquake-2.onrender.com"], // ✅ Add this line
+    allowedHosts: ["aganitha-earthquake-4.onrender.com"], // ✅ Add this line
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
