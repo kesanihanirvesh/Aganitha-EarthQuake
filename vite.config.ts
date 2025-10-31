@@ -6,9 +6,9 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   base: "./", // ✅ Important for Render (prevents blank/black screen)
   server: {
-    host: "::",
+    host: '0.0.0.0',
     port: 8080,
-    allowedHosts: ["aganitha-earthquake-5.onrender.com"],
+    allowedHosts: ["aganitha-earthquake-6.onrender.com"],
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
